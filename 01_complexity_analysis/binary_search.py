@@ -17,4 +17,4 @@ result=find_name(names,target)
 if(result==-1):
  print("Not found")
 else:
-   print("Found")
+   print("Found at index",result)
