@@ -7,12 +7,12 @@ def find_name(names,target):
         if(names[middle]==target):
            return middle
         elif(names[middle]<=target):
-           left = middle-1
+           left = middle+1
         else:
-            right=middle+1
+            right=middle-1
     return -1
 names=["Aditya","Bunny","Cat","David","Enna"]   # Should be in alphabetical order
-target="Cat"
+target="Enna"
 result=find_name(names,target)
 if(result==-1):
  print("Not found")
